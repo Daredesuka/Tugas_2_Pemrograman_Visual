@@ -1,0 +1,149 @@
+object Form1: TForm1
+  Left = 649
+  Height = 515
+  Top = 196
+  Width = 517
+  Caption = 'Perhitungan Gaji'
+  ClientHeight = 515
+  ClientWidth = 517
+  DesignTimePPI = 120
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 24
+    Height = 20
+    Top = 37
+    Width = 99
+    Caption = 'Nama Pegawai'
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 20
+    Top = 71
+    Width = 51
+    Caption = 'Jabatan'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 20
+    Top = 104
+    Width = 69
+    Caption = 'Gaji Pokok'
+    ParentColor = False
+  end
+  object gbStatus: TGroupBox
+    Left = 34
+    Height = 71
+    Top = 143
+    Width = 365
+    Caption = 'Status'
+    ClientHeight = 46
+    ClientWidth = 361
+    TabOrder = 0
+    object rbTetap: TRadioButton
+      Left = 25
+      Height = 24
+      Top = 15
+      Width = 62
+      Caption = 'Tetap'
+      OnChange = rbTetapChange
+      TabOrder = 0
+    end
+  end
+  object rbHonorer: TRadioButton
+    Left = 240
+    Height = 24
+    Top = 176
+    Width = 79
+    Caption = 'Honorer'
+    OnChange = rbHonorerChange
+    TabOrder = 1
+  end
+  object Label4: TLabel
+    Left = 24
+    Height = 20
+    Top = 224
+    Width = 113
+    Caption = 'Status Tunjangan'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 24
+    Height = 20
+    Top = 312
+    Width = 70
+    Caption = 'Gaji Bersih'
+    ParentColor = False
+  end
+  object edtNamaPegawai: TEdit
+    Left = 152
+    Height = 28
+    Top = 37
+    Width = 231
+    TabOrder = 2
+  end
+  object edtGajiPokok: TEdit
+    Left = 152
+    Height = 28
+    Top = 104
+    Width = 231
+    TabOrder = 3
+  end
+  object edtStatusTunjangan: TEdit
+    Left = 152
+    Height = 28
+    Top = 224
+    Width = 231
+    TabOrder = 4
+  end
+  object edtGajiBersih: TEdit
+    Left = 152
+    Height = 28
+    Top = 312
+    Width = 231
+    TabOrder = 5
+  end
+  object btnTotal: TButton
+    Left = 48
+    Height = 29
+    Top = 271
+    Width = 327
+    Caption = 'Total'
+    OnClick = btnTotalClick
+    TabOrder = 6
+  end
+  object btnIsiDataLagi: TButton
+    Left = 24
+    Height = 29
+    Top = 360
+    Width = 129
+    Caption = 'Isi Data Lagi'
+    OnClick = btnIsiDataLagiClick
+    TabOrder = 7
+  end
+  object btnKeluar: TButton
+    Left = 254
+    Height = 29
+    Top = 360
+    Width = 129
+    Caption = 'Keluar'
+    OnClick = btnKeluarClick
+    TabOrder = 8
+  end
+  object cbJabatan: TComboBox
+    Left = 153
+    Height = 28
+    Top = 71
+    Width = 230
+    ItemHeight = 20
+    Items.Strings = (
+      'Direktur'
+      'Karyawan'
+      'Manajer'
+    )
+    OnClick = cbJabatanClick
+    TabOrder = 9
+  end
+end
